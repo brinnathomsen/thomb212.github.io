@@ -1,0 +1,77 @@
+
+
+<style type="text/css">
+body{
+margin: 0px;
+padding: 0px
+}
+</style>
+
+body {
+  font-family: sans-serif;
+}
+
+div.big {
+  text-align: center;
+  color:black;
+letter-spacing: 3px;
+  font-size: 200px;
+
+  line-height: 100%;
+}
+
+h1{
+  padding-top: 100px;
+  text-align: center;
+  color:black;
+letter-spacing: 3px;
+  font-size: 60px;
+  font-family: "Avenir", Times, serif;
+    line-height: 100%;
+      font-family: "Montserrat", Monserrat, sans-serif;
+}
+
+img.characters {
+  display: block;
+     margin-left: auto;
+     margin-right: auto
+
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+  text-decoration: none;
+}
+
+div.characters {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+div.backgroundGeorge {
+  background-color: yellow;
+}
+
+div.backgroundJerry {
+  background-color: purple;
+}
+
+div.backgroundElaine {
+  background-color: pink;
+}
+
+div.backgroundKramer {
+  background-color: blue;
+}
+
+
+iframe {
+  display: block;
+     margin-left: auto;
+     margin-right: auto
+
+}
