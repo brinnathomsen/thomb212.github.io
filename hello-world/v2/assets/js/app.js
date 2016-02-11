@@ -1,0 +1,10 @@
+< iframe title = 'YouTube video player'
+class = 'youtube-player'
+type = 'text/html'
+width = '030'
+height = '030'
+src = 'http://www.youtube.com/embed/ZFo8b9DbcMM?rel=0&border=&autoplay=1'
+type = 'application/x-shockwave-flash'
+allowscriptaccess = 'always'
+allowfullscreen = 'true'
+frameborder = '0' > < /iframe>
