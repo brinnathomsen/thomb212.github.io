@@ -1,3 +1,5 @@
+* { box-sizing: border-box; }
+
 div {
   vertical-align: top;
 }
@@ -19,8 +21,16 @@ body{
   background-color: #ff0;
   margin: 0 15px 30px 15px;
   font-size:15px;
-
 }
+
+.parent{
+  font-size: 0;
+}
+
+
+.no-left-gutter {margin-left:0;}
+.no-right-gutter {margin-right:0;}
+
 .container {
 width: 960px;
 background-color: #f1f1f1;
@@ -31,8 +41,8 @@ margin:0 auto 0 auto;
 .c6 { width: 930px; }
 .c5 { width: 770px; }
 .c4 { width: 610px; }
-.c3 { width: 450px; }
-.c2 { width: 290px; }
+.c3 { width: 450px; padding:15px;}
+.c2 { width: 290px; background: #f00}
 .c1 { width: 130px; }
 
 .red {

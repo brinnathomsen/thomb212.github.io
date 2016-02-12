@@ -1,0 +1,23 @@
+* {box-sizing: border-box;}
+div {vertical-align: top;}
+no-gutter {margin:0;}
+
+.c{
+  display: inline-block;
+  margin: 0px;
+  font-size:0;
+}
+
+.container {
+width: 768px;
+background-color: #F8E71C;
+font-size: 0px;
+margin: 0 auto 0 auto;
+}
+
+.yellow-square { width: 768px; height: 768px; padding-left: 100px; padding-right: 100px}
+.blue-square { width: 568px; height: 568px; padding: 100px; margin-top: 100px; background-color: #202665;}
+.green-square { width: 368px; height: 368px; padding: 10px; background-color: #009E4F; }
+.red-rectangle { width: 328px; height: 67px; padding: 20px; margin: 10px; background-color: #ED2025; }
+
+.red-footer { width: 768px; padding: 50px; background-color: #D0021B; }
