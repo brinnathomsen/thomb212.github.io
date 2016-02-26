@@ -4,13 +4,27 @@
 .background-time2pm { background-color: #D3D3D3; }
 .background-time5pm { background-color: #BCBCBC; }
 .background-time8pm { background-color: #555555; }
-.background-time11pm { background-color: #333333; }
-.background-time2am { background-color: #121212; }
-.background-time5am { background-color: #999999; }
+.background-time11pm { background-color: #404040; }
+.background-time2am { background-color: #333333; }
+.background-time5am { background-color: #555555; }
 
 
-li{
-  display: inline;
+.rect {
+  width: 300px;
+  height: 200px;
+  opacity: 0.4;
+  background-color: #c2c2c2;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.times {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -29,20 +43,116 @@ a {
 .time2pm { background-color: #D3D3D3; }
 .time5pm { background-color: #BCBCBC; }
 .time8pm { background-color: #555555; }
-.time11pm { background-color: #333333; }
-.time2am { background-color: #121212; }
-.time5am { background-color: #999999; }
+.time11pm { background-color:  #404040; }
+.time2am { background-color: #333333; }
+.time5am { background-color: #555555; }
 
 
 .container {
-  width:5120px;
-  height: 1024px;
+  width:3400px;
+  height:1024px;
+  padding-top: 100px;
+  margin: 0px;
 }
 
+.section1 {
+  width: 1024px;
+  height: 1024px;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  overflow: auto;
+}
+
+
+
+.song {
+  font-family:montserrat;
+   font-style: italic;
+   font-weight:lighter;
+}
 h2 {
+
   font-family: helvetica;
 }
 
-.list8am {
-display: list-item;
+.navbar {
+  font-family: montserrat;
+  list-style-type: none;
+  display: block;
+  position: fixed;
+  top:0;
+  left: 0;
+  text-align: center;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  min-width: 900px;
 }
+
+
+ul {
+  font-family: montserrat;
+  list-style-type: none;
+  display: list-item;
+}
+
+
+
+.list8am {}
+.list11am {}
+.list2pm {}
+.list5pm {}
+.list8pm {}
+.list11pm {}
+.list2am {}
+.list5am {}
+
+
+
+/* position of food text blocks */
+.menu8am {}
+.drinks8am {}
+.menu11am {}
+.drinks11am {}
+.menu2pm {}
+.drinks2pm {}
+.menu5pm {}
+.drinks5pm {}
+.menu8pm {}
+.drinks8pm {}
+.menu11pm {}
+.drinks11pm {}
+.menu2am {}
+.drinks2am {}
+.menu5am {}
+.drinks5am {}
+
+
+/* position of song text blocks */
+.whenAManLovesAWoman {}
+.iWasBornByTheRiver {}
+.iLeftMyHomeInGeorgia {}
+.aintNoMountainHigh {}
+.aintNoSunshine {}
+.someoneToldMeLongAgo {}
+.triedToMakeMeGoToRehab {}
+.theScarsOfYourLove {}
+.sometimesIGoOutByMyself {}
+.yeahYeahYeah {}
+
+.sheAintReal {}
+.rightFromTheStart {}
+.youKnowICantStandIt {}
+.dontYouEverFeelSad {}
+
+.birdFlyingHigh {}
+.couldntUnderstand {}
+.ifITellTheWorld {}
+.amIMoreThanYouBargainedFor {}
+.allTheThingsThatIWant {}
+.strangersWaiting {}
+.thisIsTheStoryOfAGirl
+.kissMe {}
+.thoughtYouSawMeWink {}
