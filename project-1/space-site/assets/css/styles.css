@@ -1,32 +1,19 @@
 
-.background-time8am { background-color: #E5E5E5; }
-.background-time11am { background-color: #FFFFFF; }
-.background-time2pm { background-color: #D3D3D3; }
-.background-time5pm { background-color: #BCBCBC; }
-.background-time8pm { background-color: #555555; }
-.background-time11pm { background-color: #404040; }
-.background-time2am { background-color: #333333; }
-.background-time5am { background-color: #555555; }
 
-
-.rect {
-  width: 300px;
-  height: 200px;
-  opacity: 0.4;
-  background-color: #c2c2c2;
-}
-
-ul, li {
+.navbar {
+  font-family: montserrat;
+  list-style-type: none;
+  display: block;
+  position: fixed;
+  top:0;
+  left: 0;
+  text-align: center;
+  right: 0;
   margin: 0;
   padding: 0;
+  margin-top: 20px;
+  min-width: 900px;
 }
-
-.times {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-}
-
 
 a {
     margin: 5px;
@@ -47,15 +34,46 @@ a {
 .time2am { background-color: #333333; }
 .time5am { background-color: #555555; }
 
+/* background value change */
+.background-time8am { background-color: #E5E5E5; }
+.background-time11am { background-color: #FFFFFF; }
+.background-time2pm { background-color: #D3D3D3; }
+.background-time5pm { background-color: #BCBCBC; }
+.background-time8pm { background-color: #555555; }
+.background-time11pm { background-color: #404040; }
+.background-time2am { background-color: #333333; }
+.background-time5am { background-color: #555555; }
+
+
+.times {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {font-family: helvetica;}
+
+ul {
+  font-family: montserrat;
+  list-style-type: none;
+  display: list-item;
+}
 
 .container {
   width:3400px;
   height:1024px;
   padding-top: 100px;
   margin: 0px;
+  position:absolute;
 }
 
-.section1 {
+.section {
   width: 1024px;
   height: 1024px;
   display: inline-block;
@@ -64,6 +82,10 @@ a {
   overflow: auto;
 }
 
+img {
+  display: inline-block;
+  margins: 0px;
+}
 
 
 .song {
@@ -71,42 +93,74 @@ a {
    font-style: italic;
    font-weight:lighter;
 }
-h2 {
 
-  font-family: helvetica;
+.signs8am {letter-spacing: 10px; font-weight: lighter; position:absolute}
+.lame8am {margin: 100px 100px 100px 100px}
+.chocolat8am {margin: 100px 100px 100px 100px}
+.cafe8am {margin: 100px 100px 100px 100px}
+.boule8am {margin: 100px 100px 0px 0px}
+.blang8am {margin: 100px 100px 100px 100px}
+
+.signs11am {letter-spacing: 5px; position:absolute;}
+.lame11am {left: 100px; top: 150px;}
+.chocolat11am {left: 100px;  top: 450px;}
+.cafe11am {left: 100px;  top: 350px;}
+.boule11am {left: 100px;  top: 650px;}
+.blang11am {left: 100px;  top: 100px;}
+
+.signs8pm {letter-spacing: 1px; font-weight: heaviest; position:absolute; font-style: bold;}
+.lame8pm {left: 100px; top: 150px;}
+.chocolat8pm {left: 100px;  top: 450px;}
+.cafe8pm {left: 100px;  top: 350px;}
+.boule8pm {left: 100px;  top: 650px;}
+.blang8pm {left: 100px;  top: 100px;}
+
+.signs2am {letter-spacing: 1px; font-weight: lighter; position:absolute;}
+.lame8pm {left: 100px; top: 150px;}
+.chocolat8pm {left: 100px;  top: 450px;}
+.cafe8pm {left: 100px;  top: 350px;}
+.boule8pm {left: 100px;  top: 650px;}
+.blang8pm {left: 100px;  top: 100px;}
+
+
+
+.rect1 {
+  width: 300px;
+  height: 200px;
+  opacity: 0.7;
+  background-color: #FD4F01;
 }
 
-.navbar {
-  font-family: montserrat;
-  list-style-type: none;
-  display: block;
-  position: fixed;
-  top:0;
-  left: 0;
-  text-align: center;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
-  min-width: 900px;
+.rect2 {
+  width: 300px;
+  height: 100px;
+  opacity: 0.7;
+  background-color: #E42209;
 }
 
 
-ul {
-  font-family: montserrat;
-  list-style-type: none;
-  display: list-item;
+.rect3 {
+  width: 350px;
+  height: 200px;
+  opacity: 0.7;
+  background-color: #B49600;
+}
+
+.rect4 {
+  width: 100px;
+  height: 200px;
+  opacity: 0.7;
+  background-color: #FDD890;
 }
 
 
-
-.list8am {}
+.list8am { letter-spacing: 10px; font-weight: lighter;}
 .list11am {}
 .list2pm {}
 .list5pm {}
 .list8pm {}
 .list11pm {}
-.list2am {}
+.list2am {letter-spacing: 10px; font-weight: lighter;}
 .list5am {}
 
 
