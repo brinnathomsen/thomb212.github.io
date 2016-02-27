@@ -13,6 +13,7 @@
   padding: 0;
   margin-top: 20px;
   min-width: 900px;
+  z-index: 100;
 }
 
 a {
@@ -65,12 +66,18 @@ ul {
   display: list-item;
 }
 
+img {
+  position:absolute;
+  margins: 0px;
+}
+
+
 .container {
-  width:3400px;
+  width:3100px;
   height:1024px;
   padding-top: 100px;
   margin: 0px;
-  position:absolute;
+
 }
 
 .section {
@@ -79,99 +86,157 @@ ul {
   display: inline-block;
   padding: 0px;
   margin: 0px;
-  overflow: auto;
+  overflow: hidden;
+  position:relative;
 }
 
-img {
-  display: inline-block;
-  margins: 0px;
+.rect {
+  position:absolute;
+  opacity: 0.7;
 }
 
 
-.song {
-  font-family:montserrat;
-   font-style: italic;
-   font-weight:lighter;
-}
-
+/* 8AM */
+.list8am { letter-spacing: 10px; font-weight: lighter; position: absolute}
 .signs8am {letter-spacing: 10px; font-weight: lighter; position:absolute}
-.lame8am {margin: 100px 100px 100px 100px}
-.chocolat8am {margin: 100px 100px 100px 100px}
-.cafe8am {margin: 100px 100px 100px 100px}
-.boule8am {margin: 100px 100px 0px 0px}
-.blang8am {margin: 100px 100px 100px 100px}
+.song8am {font-family:montserrat; font-style: italic; font-weight:lighter; position:absolute;}
 
+
+/* section1 8am */
+.rect8am1 {width: 300px; height: 200px; background-color: #FD4F01;left: 10px; top:800px}
+.rect8am4 {width: 100px; height: 200px;background-color: #FDD890;left: 10px;top:800px}
+.table  {left: 90px; top: 700px;}
+.morning-window  {left: 600px; top: 400px;}
+.coffeemaker {left: 90px; top: 0px;}
+
+.chocolat8am {left: 100px; top: 300px;}
+.cafe8am {left: 700px; top: 0px;}
+.menu8am {left: 300px; top: 500px;}
+
+/* section2 8am*/
+.rect8am2 {width: 300px; height: 100px; background-color: #E42209; left: 150px; top:150px}
+.chandelier {left:450px; top: 0px;}
+.morning-signs {left: 100px; top: 800px;}
+.empty {left: 800px; top: 650px;}
+.flowers {left: 90px; top: 200px;}
+
+.blang8am {left: 300px; top: 700px;}
+.lame8am {left: 500px; top: 900px;}
+.whenAManLovesAWoman { left: 600px; top: 500px;}
+
+/* section3 8am*/
+.rect8am3 {width: 350px; height: 200px; background-color: #B49600; left: 700px; top:600px}
+.ceiling {left: 800px; top: 500px;}
+.water {left: 500px; top: 750px;}
+.hostess {left: 200px; top: 100px;}
+
+.boule8am {left: 500px; top:600px;}
+.drinks8am {left: 100px; top: 400px;}
+.iWasBornByTheRiver {left:600px; top:0px;}
+
+
+
+/* 11AM */
 .signs11am {letter-spacing: 5px; position:absolute;}
-.lame11am {left: 100px; top: 150px;}
+.song11am {font-family:montserrat; font-style: italic; position:absolute;}
+.list11am {position: absolute;}
+
+/* section1 11AM */
+.magazines {left: 600px; top: 300px;}
+.dirty-table {left:100px; top: 700px;}
+.graffiti {left: 100px; top: 100px;}
+.coffee-dog {left: 000px; top: 0px;}
+
+.blang11am {left: 0px;  top: 950px;}
+.lame11am {left: 100px; top: 450px;}
+.drinks11am {left: 550px; top: 650px;}
+.aintNoMountainHigh {left: 450px; top: 60px;}
+
+/* section2 11AM */
+.menus {left: 100px; top: 500px;}
+.floor-table {left: 400px; top: 800px;}
+.room {left: 700px; top: 600px;}
+.day-light {left: 200px;}
+
 .chocolat11am {left: 100px;  top: 450px;}
+.menu11am {left: 300px; top: 700px;}
+.iLeftMyHomeInGeorgia {left: 650px; top: 500px;}
+.someoneToldMeLongAgo {left: 400px; top: 450px;}
+.somedayIllWish {left: 0px; top: 250px;}
+
+/* section3 11AM */
+.group {left:200px; top: 500px;}
+.day-bar {left:500px;}
+.hot-chocolate {left:770px; top: 200px;}
+
+.boule11am {left: 600px;  top: 750px;}
 .cafe11am {left: 100px;  top: 350px;}
-.boule11am {left: 100px;  top: 650px;}
-.blang11am {left: 100px;  top: 100px;}
-
-.signs8pm {letter-spacing: 1px; font-weight: heaviest; position:absolute; font-style: bold;}
-.lame8pm {left: 100px; top: 150px;}
-.chocolat8pm {left: 100px;  top: 450px;}
-.cafe8pm {left: 100px;  top: 350px;}
-.boule8pm {left: 100px;  top: 650px;}
-.blang8pm {left: 100px;  top: 100px;}
-
-.signs2am {letter-spacing: 1px; font-weight: lighter; position:absolute;}
-.lame8pm {left: 100px; top: 150px;}
-.chocolat8pm {left: 100px;  top: 450px;}
-.cafe8pm {left: 100px;  top: 350px;}
-.boule8pm {left: 100px;  top: 650px;}
-.blang8pm {left: 100px;  top: 100px;}
+.aintNoSunshine {left: 0px; top: 50px;}
 
 
 
-.rect1 {
-  width: 300px;
-  height: 200px;
-  opacity: 0.7;
-  background-color: #FD4F01;
-}
+/* 2PM */
+.list2pm {position: absolute;}
+.song2pm {position: absolute; font-family:montserrat; font-style: italic;}
+.signs2pm {letter-spacing: 5px; position:absolute;}
 
-.rect2 {
-  width: 300px;
-  height: 100px;
-  opacity: 0.7;
-  background-color: #E42209;
-}
+/* section1 2PM */
+.blang2pm {left: 100px;  top: 100px;}
+.lame2pm {left: 500px; top: 450px;}
+.shashuka {left: 600px; top: 150px;}
+.from-bar {left: 400px; top: 150px;}
+.walking-window {left: 100px; top: 10px;}
+.menu2pm {left: 500px; top: 450px;}
 
+/* section2 2PM */
+.chalkboard {left: 500px; top: 150px;}
+.dining {left: 300px; top: 150px;}
+.back-view {left: 100px; top: 150px;}
+.drinks2pm {left: 500px; top: 450px;}
 
-.rect3 {
-  width: 350px;
-  height: 200px;
-  opacity: 0.7;
-  background-color: #B49600;
-}
+/* section3 2PM */
+.mickey {top:400px}
+.bar-condiments {left: 500px; top: 250px;}
 
-.rect4 {
-  width: 100px;
-  height: 200px;
-  opacity: 0.7;
-  background-color: #FDD890;
-}
+.chocolat2pm {left: 100px;  top: 450px;}
+.cafe2pm {left: 100px;  top: 350px;}
+.boule2pm {left: 100px;  top: 650px;}
 
 
-.list8am { letter-spacing: 10px; font-weight: lighter;}
-.list11am {}
-.list2pm {}
+
+/* 5PM */
 .list5pm {}
+/* section1 5PM */
+.enter-view {left: 0px;  top: 650px;}
+.bald-man {left: 300px;  top: 250px;}
+.phone {left: 100px;  top: 150px;}
+.front-door {left: 100px;  top: 650px;}
+/* section2 5PM */
+/* section3 5PM */
+
+/* 8PM */
 .list8pm {}
+.signs8pm {letter-spacing: 1px; font-weight: heaviest; position:absolute; font-style: bold;}
+/* section1 8PM */
+
+/* section2 8PM */
+/* section3 8PM */
+
+/* 11PM */
 .list11pm {}
+/* section1 11PM */
+/* section2 11PM */
+/* section3 11PM */
+
+/* 2AM */
 .list2am {letter-spacing: 10px; font-weight: lighter;}
-.list5am {}
+.signs2am {letter-spacing: 1px; font-weight: lighter; position:absolute;}
+/* section1 2AM */
+/* section2 2AM */
+/* section3 2AM */
 
 
 
-/* position of food text blocks */
-.menu8am {}
-.drinks8am {}
-.menu11am {}
-.drinks11am {}
-.menu2pm {}
-.drinks2pm {}
 .menu5pm {}
 .drinks5pm {}
 .menu8pm {}
@@ -184,13 +249,50 @@ img {
 .drinks5am {}
 
 
+
+
+
+
+.lame5pm {left: 100px; top: 150px;}
+.chocolat5pm {left: 100px;  top: 450px;}
+.cafe5pm {left: 100px;  top: 350px;}
+.boule5pm {left: 100px;  top: 650px;}
+.blang5pm {left: 100px;  top: 100px;}
+
+.lame8pm {left: 100px; top: 150px;}
+.chocolat8pm {left: 100px;  top: 450px;}
+.cafe8pm {left: 100px;  top: 350px;}
+.boule8pm {left: 100px;  top: 650px;}
+.blang8pm {left: 100px;  top: 100px;}
+
+
+.lame11pm {left: 100px; top: 150px;}
+.chocolat11pm {left: 100px;  top: 450px;}
+.cafe11pm {left: 100px;  top: 350px;}
+.boule11pm {left: 100px;  top: 650px;}
+.blang11pm {left: 100px;  top: 100px;}
+
+.lame2am {left: 100px; top: 150px;}
+.chocolat2am {left: 100px;  top: 450px;}
+.cafe2am {left: 100px;  top: 350px;}
+.boule2am {left: 100px;  top: 650px;}
+.blang2am {left: 100px;  top: 100px;}
+
+
+
+
+
+
+/* position of food text blocks */
+
+
+
+
+
 /* position of song text blocks */
-.whenAManLovesAWoman {}
-.iWasBornByTheRiver {}
-.iLeftMyHomeInGeorgia {}
-.aintNoMountainHigh {}
-.aintNoSunshine {}
-.someoneToldMeLongAgo {}
+
+
+
 .triedToMakeMeGoToRehab {}
 .theScarsOfYourLove {}
 .sometimesIGoOutByMyself {}
