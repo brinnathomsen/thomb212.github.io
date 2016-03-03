@@ -78,6 +78,7 @@ position: relative;
   height:1024px;
   padding-top: 100px;
   position:absolute;
+  margin: 0px auto 0px auto;
 }
 
 .section {
