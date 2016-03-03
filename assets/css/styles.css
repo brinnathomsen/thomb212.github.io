@@ -50,6 +50,12 @@ font-size: 0px;
 margin:0 auto 0 auto;
 }
 
+.canvas {
+  z-index: -100px;
+  position: absolute;
+  top: 0px;
+}
+
 .c6 { width: 930px; margin-top: 100px; text-align: center; font-size: 50px; color: #f0f;}
 .c5 { width: 770px; }
 .c4 { width: 610px; }

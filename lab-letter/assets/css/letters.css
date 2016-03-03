@@ -1,0 +1,51 @@
+
+.letter-wrapper {
+display: inline-block;
+}
+
+.word {
+  margin-right: 100px;
+  display: inline-block;
+}
+
+.letter {
+  width: 150px;
+  height: 200px;
+  margin: 50px;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.bar {
+  position: absolute;
+}
+
+.vert {
+  height: 200px;
+  width: 30px;
+}
+
+.horz {
+  height: 30px;
+  width: 150px;
+}
+
+.red {background-color: red;}
+.black {background-color: #000;}
+.yellow {background-color:#ff0;}
+.blue {background-color: #000;}
+
+.a-left {
+left: 0px;
+}
+
+.a-right {top: 0px; right: 0px;}
+
+.a-top {top:0; left: 0;
+}
+
+.a-mid {
+  background-color: #00F;
+  top:100px;
+}
