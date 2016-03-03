@@ -34,18 +34,12 @@ display: inline-block;
 .red {background-color: red;}
 .black {background-color: #000;}
 .yellow {background-color:#ff0;}
-.blue {background-color: #000;}
+.blue {background-color: #00F;}
 
-.a-left {
-left: 0px;
-}
+.a-left {left: 0px;}
 
 .a-right {top: 0px; right: 0px;}
 
-.a-top {top:0; left: 0;
-}
+.a-top {top:0; left: 0;}
 
-.a-mid {
-  background-color: #00F;
-  top:100px;
-}
+.a-mid {top:100px;}
