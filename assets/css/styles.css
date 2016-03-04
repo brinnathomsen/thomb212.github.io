@@ -28,12 +28,6 @@ body {
 }
 
 
-.background{
-  position: fixed;;
-  z-index: -100;
-  left: 0px;
-}
-
 .c {
   display: inline-block;
   background-color: #fff;
