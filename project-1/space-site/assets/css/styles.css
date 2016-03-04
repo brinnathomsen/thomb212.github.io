@@ -59,16 +59,23 @@ ul, li {
 
 h2 {font-family: montserrat; font-size: 30px;}
 
+
+
 ul {
   font-family: montserrat;
   list-style-type: none;
   display: list-item;
 }
 
+
+
+
 img {
   position:absolute;
   margins: 0px;
 }
+
+
 b{
 position: relative;
 }
@@ -106,6 +113,10 @@ position: relative;
   font-weight: lighter;
   line-height: 30px;
   position: absolute
+}
+
+.list8am:hover {
+  transform: scale(1.5, 1.5);
 }
 
 .signs8am {

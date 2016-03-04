@@ -1,8 +1,10 @@
 var tilt;
 var color;
+var canvas;
 
 function setup() {
-  createCanvas(800, 500);
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0, 0);
   noLoop();
   noStroke();
   fill(255, 255, 255);

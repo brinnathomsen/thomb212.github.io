@@ -10,30 +10,39 @@ a {
   color: black;
 }
 
-h1, h2 {
-  font-sze: 15px;
-  margin:0px;
+h1 {
+  font-size: 100px;
+  margin:25px;
+  line-height: 70px;
 }
 
-body{
+h2 {
+  font-size: 15px;
+  margin:15px;
+}
+
+body {
   margin:0px;
   padding: 0px;
   font-size:15px;
-  font-family: avenir, helvetica, sans-serif
 }
+
 
 .background{
-  position: fixed;
+  position: fixed;;
   z-index: -100;
+  left: 0px;
 }
 
-.c{
-
+.c {
   display: inline-block;
   background-color: #fff;
   opacity: 0.9;
-  margin: 0 15px 30px 15px;
+  margin: 15px; 15px 30px 15px;
   font-size:15px;
+
+  position: relative;
+  z-index: 100;
 }
 
 .parent{
@@ -44,16 +53,12 @@ body{
 .no-left-gutter {margin-left:0;}
 .no-right-gutter {margin-right:0;}
 
+
 .container {
 width: 960px;
 font-size: 0px;
 margin:0 auto 0 auto;
-}
-
-.canvas {
-  z-index: -100px;
-  position: absolute;
-  top: 0px;
+font-family: avenir;
 }
 
 .c6 { width: 930px; margin-top: 100px; text-align: center; font-size: 50px; color: #f0f;}
