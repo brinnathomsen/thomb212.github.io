@@ -115,9 +115,7 @@ position: relative;
   position: absolute
 }
 
-.list8am:hover {
-  transform: scale(1.5, 1.5);
-}
+
 
 .signs8am {
   letter-spacing: 10px;

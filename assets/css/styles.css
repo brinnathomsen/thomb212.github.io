@@ -14,17 +14,25 @@ h1 {
   font-size: 100px;
   margin:25px;
   line-height: 70px;
+  font-family: avenir;
 }
 
 h2 {
-  font-size: 15px;
+  font-size: 35px;
   margin:15px;
 }
 
+h3 {
+  font-size: 15px;
+  margin:15px;
+}
 body {
   margin:0px;
   padding: 0px;
   font-size:15px;
+  background-color: #FFF;
+  font-family: avenir;
+  margin-right: 100px;
 }
 
 
@@ -53,6 +61,11 @@ width: 960px;
 font-size: 0px;
 margin:0 auto 0 auto;
 font-family: avenir;
+}
+
+p {
+width: 900px;
+ font-weight: lighter;
 }
 
 .c6 { width: 930px; margin-top: 100px; text-align: center; font-size: 50px; color: #f0f;}
