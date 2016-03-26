@@ -1,0 +1,310 @@
+
+body {
+  background-color: grey;
+}
+
+.letter-wrapper {
+display: inline-block;
+
+}
+
+.word {
+  margin-right: 200px;
+  display: inline-block;
+}
+
+.letter {
+  width: 130px;
+  height: 200px;
+  margin: 50px;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  background-color: grey;
+}
+
+.bar {
+  position: absolute;
+}
+
+.vert {
+  height: 200px;
+  width: 30px;
+  border-radius: 25px;
+}
+
+.horz {
+  height: 30px;
+  width: 120px;
+  border-radius: 25px;
+}
+
+
+.black {background-color: #000; }
+.white {background-color: #FFF; }
+.black-serif {width: 130px; left: -10px;}
+.white-serif {width: 130px; left: 0px;}
+
+/* Letter A */
+.a-left-black {left: 0px;}
+.a-right-black {top: 0px; right: 10px;}
+.a-top-black {top:0; left: 0;}
+.a-mid-black {top:90px; left: -10px;}
+
+.a-left-white {top: 10px; left: 10px; }
+.a-right-white {top: 10px; right: 0px;}
+.a-top-white {top:10px; left: 10px;}
+.a-mid-white {top:100px; left: 0px;}
+
+
+/* Letter B */
+.b-left-black {left: 0px;}
+.b-right-black {top: 0px; right: 10px;}
+.b-top-black {top:0;}
+.b-mid-black {top: 90px; width: 70px; right: 10px;}
+.b-bottom-black {top:170px}
+
+.b-left-white {top: 10px; left: 10px; }
+.b-right-white {top: 10px; right: 0px;}
+.b-top-white {top:10px;}
+.b-mid-white {top:100px; width: 70px; right: 0px;}
+.b-bottom-white {top:180px;}
+
+/* Letter C */
+.c-left-black {left: 0px;}
+.c-top-black {top:0; left: 0;}
+.c-bottom-black {top:170px; left: 0px;}
+
+.c-left-white {top: 10px; left: 10px; }
+.c-top-white {top:10px; left: 10px;}
+.c-bottom-white {top:180px; left: 10px;}
+
+/* Letter D */
+.d-left-black {left: 0px;}
+.d-right-black {top: 0px; right: 10px;}
+.d-top-black {top:0px;}
+.d-bottom-black {top:170px;}
+
+.d-left-white {top: 10px; left: 10px; }
+.d-right-white {top: 10px; right: 0px;}
+.d-top-white {top:10px;}
+.d-bottom-white {top:180px;}
+
+
+/* Letter E */
+.e-left-black {left: 0px;}
+.e-top-black {top:0;}
+.e-mid-black {top: 90px; width: 70px; left: 0px;}
+.e-bottom-black {top:170px;}
+
+.e-left-white {top: 10px; left: 10px; }
+.e-top-white {top:10px;}
+.e-mid-white {top:100px; width: 70px; left: 10px;}
+.e-bottom-white {top:180px; left: 0px;}
+
+
+/* Letter F */
+.f-left-black {left: 0px;}
+.f-top-black {top:0;}
+.f-mid-black {top: 90px; width: 70px; left: 0px;}
+
+.f-left-white {top: 10px; left: 10px; }
+.f-top-white {top:10px;}
+.f-mid-white {top:100px; width: 70px; left: 10px;}
+
+/* Letter G */
+.g-left-black {left: 0px;}
+.g-right-black {top: 100px; right: 10px; height: 110px;}
+.g-top-black {top:0; left: 0px;}
+.g-mid-black {top: 90px; width: 70px; right: 10px;}
+.g-bottom-black {top:170px; left: 0px;}
+
+.g-left-white {top: 10px; left: 10px; }
+.g-right-white {top: 100px; right: 0px; height: 100px;}
+.g-top-white {top:10px; left: 10px;}
+.g-mid-white {top:100px; width: 70px; right: 0px;}
+.g-bottom-white {top:180px; left: 10px;}
+
+/* Letter H */
+.h-left-black {left: 0px;}
+.h-right-black {top: 0px; right: 10px;}
+.h-top-black {top:0; left: 0;}
+.h-mid-black {top:90px; left: 0px;}
+
+.h-left-white {top: 10px; left: 10px; }
+.h-right-white {top: 10px; right: 0px;}
+.h-top-white {top:10px; left: 10px;}
+.h-mid-white {top:100px; left: 10px;}
+
+/* Letter I */
+.i-mid-black {left: 40px;}
+.i-top-black {top:0px;}
+.i-bottom-black {top:170px;}
+
+.i-mid-white {top: 10px; left: 50px; }
+.i-top-white {top:10px; left: 10px;}
+.i-bottom-white {top:180px; left: 10px;}
+
+/* Letter J */
+.j-right-black {right: 20px;}
+.j-top-black {top:0px; right: 10px;}
+.j-bottom-black {top:170px; right: 20px; width: 100px;}
+
+.j-right-white {top: 10px; right: 10px; }
+.j-top-white {top:10px; right: 0px;}
+.j-bottom-white {top:180px; right: 10px; width: 100px;}
+
+/* Letter K */
+.k-left-black {left: 0px;}
+.k-right-black {top: 0px; right: 20px;}
+.k-top-black {top:0; left: 0;}
+.k-mid-black {top:90px; left: -10px;}
+.k-bottom-black {top:170px; right: 0px; width: 50px;}
+.k-top-black {top:0px; left: 80px; width: 50px;}
+
+.k-left-white {top: 10px; left: 10px; }
+.k-right-white {top: 10px; right: 10px;}
+.k-top-white {top:10px; left: 10px;}
+.k-mid-white {top:100px; left: 0px;}
+.k-bottom-white {top:180px; right: -10px; width: 50px;}
+.k-top-white {top:10px; left: 90px; width: 50px;}
+
+/* Letter L */
+.l-mid-black {left: 0px;}
+.l-bottom-black {top:170px;}
+
+.l-mid-white {top: 10px; left: 10px; }
+.l-bottom-white {top:180px; left: 10px;}
+
+/* Letter M */
+.m-left-black {left: -10px;}
+.m-right-black {top: 0px; right: 0px;}
+.m-top-black {top:0px; left: -10px; width: 140px;}
+.m-bottom-black {top:170px;}
+.m-mid-black {top:10px; left: 50px; height: 80px;}
+
+.m-left-white {top: 10px; left: 0px; }
+.m-right-white {top: 10px; right: -10px;}
+.m-top-white {top:10px; left: 0px; width: 140px;}
+.m-bottom-white {top:180px;}
+.m-mid-white {top:10px; left: 60px; height: 80px;}
+
+
+/* Letter N */
+.n-left-black {left: 0px;}
+.n-right-black {top: 0px; right: 10px;}
+.n-top-black {top:0px;}
+
+.n-left-white {top: 10px; left: 10px; }
+.n-right-white {top: 10px; right: 0px;}
+.n-top-white {top:10px; left: 10px;}
+
+/* Letter O */
+.o-left-black {left: 0px;}
+.o-right-black {top: 0px; right: 10px;}
+.o-top-black {top:0px;}
+.o-bottom-black {top:170px;}
+
+.o-left-white {top: 10px; left: 10px; }
+.o-right-white {top: 10px; right: 0px;}
+.o-top-white {top:10px; left: 10px;}
+.o-bottom-white {top:180px; left: 10px;}
+
+/* Letter P */
+.p-left-black {left: 0px;}
+.p-right-black {top: 0px; right: 10px; height: 120px;}
+.p-top-black {top:0;}
+.p-mid-black {top: 90px; width: 70px; right: 10px;}
+
+.p-left-white {top: 10px; left: 10px; }
+.p-right-white {top: 10px; right: 0px;  height: 120px;}
+.p-top-white {top:10px;}
+.p-mid-white {top:100px; width: 70px; right: 0px;}
+
+/* Letter Q */
+.q-left-black {left: 0px;}
+.q-right-black {top: 0px; right: 10px;}
+.q-top-black {top:0px;}
+.q-bottom-black {top:170px;}
+.q-mid-black {top: 120px; width: 70px; right: -10px;}
+
+.q-left-white {top: 10px; left: 10px; }
+.q-right-white {top: 10px; right: 0px;}
+.q-top-white {top:10px; left: 10px;}
+.q-bottom-white {top:180px; left: 10px;}
+.q-mid-white {top:130px; width: 70px; right: -20px;}
+
+
+
+/* Letter R */
+.r-left-black {left: 0px;}
+.r-right-black {top: 0px; right: 10px;}
+.r-top-black {top:0;}
+.r-mid-black {top: 90px; width: 70px; right: 10px;}
+.r-bottom-black {top:170px}
+
+.r-left-white {top: 10px; left: 10px; }
+.r-right-white {top: 10px; right: 0px;}
+.r-top-white {top:10px;}
+.r-mid-white {top:100px; width: 70px; right: 0px;}
+.r-bottom-white {top:180px;}
+
+/* Letter S */
+.s-left-black {left: 0px; height: 110px;}
+.s-right-black {top: 100px; right: 10px; height: 110px;}
+.s-top-black {top:0;}
+.s-mid-black {top: 90px; width: 120px; right: 10px;}
+.s-bottom-black {top:170px}
+
+.s-left-white {top: 10px; left: 10px; height: 110px;}
+.s-right-white {top: 110px; right: 0px; height: 100px;}
+.s-top-white {top:10px; left: 10px;}
+.s-mid-white {top:100px; width: 120px; right: 0px;}
+.s-bottom-white {top:180px; left: 10px;}
+
+
+/* Letter T */
+.t-mid-black {left: 40px;}
+.t-top-black {top:0px;}
+.t-bottom-black {top:170px;}
+
+.t-mid-white {top: 10px; left: 50px; }
+.t-top-white {top:10px; left: 10px;}
+.t-bottom-white {top:180px; left: 10px;}
+
+/* Letter U */
+.u-left-black {left: 0px;}
+.u-right-black {top: 0px; right: 10px;}
+.u-top-black {top:0px;}
+.u-bottom-black {top:170px;}
+
+.u-left-white {top: 10px; left: 10px; }
+.u-right-white {top: 10px; right: 0px;}
+.u-top-white {top:10px; left: 10px;}
+.u-bottom-white {top:180px; left: 10px;}
+
+/* Letter V */
+.v-left-black {left: 0px;  height: 130px;}
+.v-left2-black {left: 20px; top: 130px; height: 70px;}
+.v-right-black {top: 0px; right: 10px; height: 130px;}
+.v-right2-black {top: 120px; right: 30px; height: 70px;}
+.v-bottom-black {top:170px; left: 20px; width: 80px;}
+
+.v-left-white {top: 10px; left: 10px;  height: 130px; }
+.v-left2-white {top: 130px; left: 30px; height: 70px; }
+.v-right-white {top: 10px; right: 0px; height: 130px;}
+.v-right2-white {top: 130px; right: 20px; height: 70px;}
+.v-bottom-white {top:180px; left: 30px; width: 80px;}
+
+/* Letter W */
+.w-left-black {left: -10px;}
+.w-right-black {top: 0px; right: 0px;}
+.w-top-black {top:170px; left: -10px; width: 140px;}
+.w-bottom-black {top:170px;}
+.w-mid-black {top:110px; left: 50px; height: 80px;}
+
+.w-left-white {top: 10px; left: 0px; }
+.w-right-white {top: 10px; right: -10px;}
+.w-top-white {top:180px; left: 0px; width: 140px;}
+.w-bottom-white {top:180px;}
+.w-mid-white {top:120px; left: 60px; height: 80px;}
