@@ -308,3 +308,68 @@ display: inline-block;
 .w-top-white {top:180px; left: 0px; width: 140px;}
 .w-bottom-white {top:180px;}
 .w-mid-white {top:120px; left: 60px; height: 80px;}
+
+/* Letter X */
+.x-left-black {left: 0px;  height: 60px;}
+.x-left2-black {left: 20px; top: 50px; height: 40px;}
+.x-right-black {top: 0px; right: 10px; height: 60px;}
+.x-right2-black {top: 50px; right: 30px; height: 40px;}
+.x-bottom-black {top: 80px; left: 40px; width: 40px;}
+
+.x-left-bottom-black {left: 0px;  height: 60px; bottom: 10px;}
+.x-left2-bottom-black {left: 20px; bottom: 60px; height: 40px;}
+.x-right-bottom-black {bottom: 10px; right: 10px; height: 60px;}
+.x-right2-bottom-black {bottom: 60px; right: 30px; height: 40px;}
+
+
+.x-left-white {top: 10px; left: 10px;  height: 60px; }
+.x-left2-white {top: 60px; left: 30px; height: 40px; }
+.x-right-white {top: 10px; right: 0px; height: 60px;}
+.x-right2-white {top: 60px; right: 20px; height: 40px;}
+.x-bottom-white {top:90px; left: 50px; width: 40px;}
+
+.x-left-bottom-white {bottom: 0px; left: 10px;  height: 60px; }
+.x-left2-bottom-white {bottom: 50px; left: 30px; height: 40px; }
+.x-right-bottom-white {bottom: 0px; right: 0px; height: 60px;}
+.x-right2-bottom-white {bottom: 50px; right: 20px; height: 40px;}
+
+
+/* Letter Y */
+.y-left-black {left: 0px;  height: 70px;}
+.y-left2-black {left: 20px; top: 60px; height: 50px;}
+.y-right-black {top: 0px; right: 10px; height: 70px;}
+.y-right2-black {top: 60px; right: 30px; height: 50px;}
+.y-bottom-black {top:80px; left: 20px; width: 80px;}
+.y-mid-black {left: 45px; bottom: 10px; height: 100px;}
+
+.y-left-white {top: 10px; left: 10px;  height: 70px; }
+.y-left2-white {top: 70px; left: 30px; height: 50px; }
+.y-right-white {top: 10px; right: 0px; height: 70px;}
+.y-right2-white {top: 70px; right: 20px; height: 50px;}
+.y-bottom-white {top:90px; left: 30px; width: 80px;}
+.y-mid-white {bottom: 0px; left: 55px;  height: 100px; }
+
+/* Letter Z */
+
+.z-right-black {top: 0px; right: 10px; height: 60px;}
+.z-right2-black {top: 50px; right: 30px; height: 40px;}
+.z-mid-black {top: 80px; left: 40px; width: 40px;}
+.z-top-black {top:0px;}
+.z-bottom-black {top:160px;}
+
+
+.z-left-bottom-black {left: 0px;  height: 60px; bottom: 10px;}
+.z-left2-bottom-black {left: 20px; bottom: 60px; height: 40px;}
+
+
+
+
+.z-right-white {top: 10px; right: 0px; height: 60px;}
+.z-right2-white {top: 60px; right: 20px; height: 40px;}
+.z-mid-white {top:90px; left: 50px; width: 40px;}
+.z-top-white {top:170px;left: 10px;}
+.z-bottom-white {top:10px;left: 10px;}
+
+
+.z-left-bottom-white {bottom: 0px; left: 10px;  height: 60px; }
+.z-left2-bottom-white {bottom: 50px; left: 30px; height: 40px; }
