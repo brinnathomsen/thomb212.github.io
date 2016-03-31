@@ -1,0 +1,97 @@
+* { box-sizing: border-box;}
+
+html,body {
+
+  height: 100%;
+}
+
+body {
+    font-size: 0px;
+    padding: 0;
+}
+
+.hide {
+  display:none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+
+
+li {
+  font-size: 20px;
+  display: inline-block;
+  padding: 10 10 10 20;
+  margin: 10px;
+}
+
+.column {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0px;
+}
+
+
+.content {
+    background-color: #F1F1F1;
+}
+
+.slay {
+  color: white;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  font-size: 200px;
+  position:fixed;
+}
+.slay span {
+  top: 50%;
+  left: 50%;
+  position:absolute;
+  transform: translate(-50%, -50%);
+}
+
+.nav-item {
+  color: #000;
+  padding: 10px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.active {
+  background: #000;
+  color: #FFF;
+}
+
+.green {
+  background: #B8E896;
+}
+.blue {
+  background: #4A90E2;
+}
+.red {
+  background: #D0021B;
+}
+
+.close {
+  position:absolute;
+  top: 25px;
+  right:25px;
+  width:85px;
+  height: 85px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+.paint {
+  background-image: url(../img/jackVanzet.jpg);
+}

@@ -3,24 +3,28 @@ body {
   background-color: grey;
 }
 
+.stage {
+  background-color: purple;
+}
+
 .letter-wrapper {
 display: inline-block;
 
 }
 
 .word {
-  margin-right: 200px;
+  margin-right: 10px;
   display: inline-block;
 }
 
 .letter {
   width: 130px;
   height: 200px;
-  margin: 50px;
+  margin: 10px;
   position: relative;
   display: inline-block;
-  margin: 10px;
-  background-color: grey;
+
+
 }
 
 .bar {
@@ -42,65 +46,80 @@ display: inline-block;
 
 .black {background-color: #000; }
 .white {background-color: #FFF; }
-.black-serif {width: 130px; left: -10px;}
+.black-serif { left: -10px;}
 .white-serif {width: 130px; left: 0px;}
 
 /* Letter A */
 .a-left-black {left: 0px;}
-.a-right-black {top: 0px; right: 10px;}
-.a-top-black {top:0; left: 0;}
+.a-right-black {top: 30px; right: 10px; height:170px;}
+.a-top-black {top:0; left: 0;  width: 90px;}
+.a-right2-black {top: 30px; right: 30px; height: 40px;}
 .a-mid-black {top:90px; left: -10px;}
 
 .a-left-white {top: 10px; left: 10px; }
-.a-right-white {top: 10px; right: 0px;}
+.a-right-white {top: 40px; right: 0px; height:170px;}
 .a-top-white {top:10px; left: 10px;}
 .a-mid-white {top:100px; left: 0px;}
 
 
 /* Letter B */
 .b-left-black {left: 0px;}
-.b-right-black {top: 0px; right: 10px;}
-.b-top-black {top:0;}
-.b-mid-black {top: 90px; width: 70px; right: 10px;}
-.b-bottom-black {top:170px}
+.b-right-top-black {top: 35px; right: 10px;  height:60px;}
+.b-right-bottom-black {bottom: 30px; right: 10px;  height:60px;}
+.b-top-black {top:0; width: 80px; left: 0px; }
+.b-mid-black {top: 88px; width: 55px; right: 30px;}
+.b-bottom-black {top:170px; width: 80px;}
+.b-right2-top-black {top: 10px; right: 35px; height: 40px;}
+.b-right2-bottom-black {bottom: 10px; right: 35px; height: 40px;}
 
 .b-left-white {top: 10px; left: 10px; }
-.b-right-white {top: 10px; right: 0px;}
-.b-top-white {top:10px;}
-.b-mid-white {top:100px; width: 70px; right: 0px;}
-.b-bottom-white {top:180px;}
+.b-right-top-white {top: 45px; right: 0px; height:60px;}
+.b-right-bottom-white {bottom: 20px; right: 0px; height:60px;}
+.b-top-white {top:10px; width: 70px; left: 10px;}
+.b-mid-white {top:98px; width: 55px; right: 20px;}
+.b-bottom-white {top:180px; width: 70px; left: 10px;}
+.b-right2-top-white {top: 20px; right: 25px; height: 40px;}
+.b-right2-bottom-white {bottom: 0px; right: 25px; height: 40px;}
 
 /* Letter C */
-.c-left-black {left: 0px;}
-.c-top-black {top:0; left: 0;}
-.c-bottom-black {top:170px; left: 0px;}
+.c-left-black {top: 35px; left: 0px; height: 130px;}
+.c-top-black {top:0; left: 50px; width: 60px;}
+.c-bottom-black {top:170px; left: 50px; width: 60px; bottom: 10px;}
+.c-left2-top-black {top: 10px; left: 25px; height: 40px;}
+.c-left2-bottom-black {bottom: 10px; left: 25px; height: 40px;}
 
-.c-left-white {top: 10px; left: 10px; }
-.c-top-white {top:10px; left: 10px;}
-.c-bottom-white {top:180px; left: 10px;}
+.c-left-white {top: 45px; left: 10px; height: 130px; }
+.c-top-white {top:10px; left: 60px; width: 60px;}
+.c-bottom-white {top:180px; left: 60px; width: 60px;}
+.c-left2-top-white {top: 20px; left: 35px; height: 40px;}
+.c-left2-bottom-white {bottom: 0px; left: 35px; height: 40px;}
 
 /* Letter D */
 .d-left-black {left: 0px;}
-.d-right-black {top: 0px; right: 10px;}
-.d-top-black {top:0px;}
-.d-bottom-black {top:170px;}
+.d-right-black {top: 35px; right: 10px;  height:130px;}
+.d-top-black {top:0px; width: 80px;}
+.d-bottom-black {top:170px; width: 80px;}
+.d-right2-top-black {top: 10px; right: 35px; height: 40px;}
+.d-right2-bottom-black {bottom: 10px; right: 35px; height: 40px;}
 
 .d-left-white {top: 10px; left: 10px; }
-.d-right-white {top: 10px; right: 0px;}
-.d-top-white {top:10px;}
-.d-bottom-white {top:180px;}
+.d-right-white {top: 45px; right: 0px;  height:130px;}
+.d-top-white {top:10px; width: 70px; left: 10px;}
+.d-bottom-white {top:180px; width: 70px; left: 10px;}
+.d-right2-top-white {top: 20px; right: 25px; height: 40px;}
+.d-right2-bottom-white {bottom: 0px; right: 25px; height: 40px;}
 
 
 /* Letter E */
 .e-left-black {left: 0px;}
-.e-top-black {top:0;}
+.e-top-black {top:0; left: 0px; width: 120px;}
 .e-mid-black {top: 90px; width: 70px; left: 0px;}
 .e-bottom-black {top:170px;}
 
-.e-left-white {top: 10px; left: 10px; }
-.e-top-white {top:10px;}
+.e-left-white {top: 10px; left: 10px;}
+.e-top-white {top:10px; left: 10px; width: 120px;}
 .e-mid-white {top:100px; width: 70px; left: 10px;}
-.e-bottom-white {top:180px; left: 0px;}
+.e-bottom-white {top:180px; left: 10px; width: 120px; }
 
 
 /* Letter F */
@@ -356,20 +375,17 @@ display: inline-block;
 .z-mid-black {top: 80px; left: 40px; width: 40px;}
 .z-top-black {top:0px;}
 .z-bottom-black {top:160px;}
-
-
 .z-left-bottom-black {left: 0px;  height: 60px; bottom: 10px;}
 .z-left2-bottom-black {left: 20px; bottom: 60px; height: 40px;}
-
-
-
 
 .z-right-white {top: 10px; right: 0px; height: 60px;}
 .z-right2-white {top: 60px; right: 20px; height: 40px;}
 .z-mid-white {top:90px; left: 50px; width: 40px;}
 .z-top-white {top:170px;left: 10px;}
 .z-bottom-white {top:10px;left: 10px;}
-
-
 .z-left-bottom-white {bottom: 0px; left: 10px;  height: 60px; }
 .z-left2-bottom-white {bottom: 50px; left: 30px; height: 40px; }
+
+.space {
+  width: 200px;
+}
