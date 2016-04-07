@@ -1,21 +1,60 @@
 
-body {
+
+ body {
   background-color: grey;
+  font-family: avenir;
+  margin: 0px;
+  padding: 0px;
+  height: 100px;
+  font-size: 0px;
+
+
 }
+
+.intro {
+  background-color: aqua;
+  width: 800px;
+  height: 400px;
+  padding-top: 300px;
+  text-align: center;
+display:none;
+}
+
+
+.typing {
+  background-color: gray;
+  width: 1000px;
+  height: 400px;
+  padding-top: 300px;
+  text-align: center;
+  z-index: 100px;
+  display: none;
+}
+
+
 
 .stage {
-  background-color: purple;
+  font-size: 0px;
+  position: absolute;
+  top:0;
+  left:0;
 }
 
-.letter-wrapper {
+.alphabet {
 display: inline-block;
-
+display: none;
 }
 
 .word {
-  margin-right: 10px;
+  margin-right: 75px;
+  margin-top: 20px;
   display: inline-block;
+
+  font-size: 0px;
+
 }
+
+
 
 .letter {
   width: 130px;
@@ -23,7 +62,6 @@ display: inline-block;
   margin: 10px;
   position: relative;
   display: inline-block;
-
 
 }
 
@@ -164,11 +202,11 @@ display: inline-block;
 /* Letter K */
 .k-left-black {left: 0px;}
 .k-top-black {top: 135px; left: 0px; width: 140px; transform: rotate(45deg)}
-.k-bottom-black {top:50px; left: 0px; transform: rotate(-45deg)}
+.k-bottom-black {top:55px; left: -5px; width: 130px; transform: rotate(-45deg)}
 
 .k-left-white {top: 10px; left: 10px; }
 .k-top-white {top: 135px; left: 0px; width: 150px; transform: rotate(45deg)}
-.k-bottom-white {top:60px; left: 0px; width: 140px; transform: rotate(-45deg)}
+.k-bottom-white {top:55px; left: 0px; width: 150px; transform: rotate(-45deg)}
 
 
 
@@ -245,7 +283,7 @@ display: inline-block;
 .r-right-black {top: 0px; right: 10px; height: 110px;}
 .r-top-black {top:0; left: 0px;}
 .r-mid-black {top: 80px; width: 100px; right: 10px;}
-.r-bottom-black {top: 135px; left: 0px; width: 140px; transform: rotate(45deg)}
+.r-bottom-black {top: 135px; left: 10px; width: 140px; transform: rotate(45deg)}
 
 .r-left-white {top: 10px; left: 10px;}
 .r-right-white {top: 10px; right: 0px; height: 110px;}
@@ -254,18 +292,19 @@ display: inline-block;
 .r-bottom-white {top: 135px; left: 10px; width: 150px; transform: rotate(45deg)}
 
 
-
-
-
 /* Letter S */
-.s-left-black {left: 0px; height: 110px;}
+.s-left-black {left: 0px; height: 120px;}
+.s-left2-black {top: 150px;left: 0px; height: 50px;}
 .s-right-black {top: 100px; right: 10px; height: 110px;}
+.s-right2-black {top: 0px; right: 10px; height: 50px;}
 .s-top-black {top:0;}
 .s-mid-black {top: 90px; width: 120px; right: 10px;}
 .s-bottom-black {top:170px}
 
-.s-left-white {top: 10px; left: 10px; height: 110px;}
-.s-right-white {top: 110px; right: 0px; height: 100px;}
+.s-left-white {top: 10px; left: 10px; height: 120px;}
+.s-left2-white {top: 160px; left: 10px; height: 50px;}
+.s-right-white {top: 100px; right: 0px; height: 110px;}
+.s-right2-white {top: 10px; right: 0px; height: 50px;}
 .s-top-white {top:10px; left: 10px;}
 .s-mid-white {top:100px; width: 120px; right: 0px;}
 .s-bottom-white {top:180px; left: 10px;}
@@ -292,17 +331,13 @@ display: inline-block;
 .u-bottom-white {top:180px; left: 10px;}
 
 /* Letter V */
-.v-left-black {left: 0px;  height: 130px;}
-.v-left2-black {left: 20px; top: 130px; height: 70px;}
-.v-right-black {top: 0px; right: 10px; height: 130px;}
-.v-right2-black {top: 120px; right: 30px; height: 70px;}
-.v-bottom-black {top:170px; left: 20px; width: 80px;}
+.v-left-black {left: 10px;  height: 200px; transform: rotate(-15deg)}
+.v-right-black {top: 0px; right: 20px; height: 200px; transform: rotate(15deg)}
+.v-bottom-black {top:170px; left: 45px; width: 50px;}
 
-.v-left-white {top: 10px; left: 10px;  height: 130px; }
-.v-left2-white {top: 130px; left: 30px; height: 70px; }
-.v-right-white {top: 10px; right: 0px; height: 130px;}
-.v-right2-white {top: 130px; right: 20px; height: 70px;}
-.v-bottom-white {top:180px; left: 30px; width: 80px;}
+.v-left-white {top: 10px; left: 20px;  height: 200px; transform: rotate(-15deg) }
+.v-right-white {top: 10px; right: 10px; height: 200px; transform: rotate(15deg)}
+.v-bottom-white {top:180px; left: 45px; width: 50px;}
 
 /* Letter W */
 .w-left-black {left: -10px;}
@@ -319,63 +354,52 @@ display: inline-block;
 
 /* Letter X */
 .x-left-black {left: 0px;  height: 60px;}
-.x-right-black {top: 0px; right: 10px; height: 60px;}
-
-
+.x-right-black {top: 0px; right: 10px; height: 58px;}
 .x-left-dash-black {left: 50px; top: 20px; height: 150px; transform: rotate(-45deg)}
-.x-right-dash-black {top: 15px; left: 50px; height: 150px; transform: rotate(45deg)}
+.x-right-dash-black {top: 20px; left: 45px; height: 150px; transform: rotate(45deg)}
+.x-left-bottom-black {left: 0px;  height: 75px; top: 125px;}
+.x-right-bottom-black {top: 125px; right: 10px; height: 75px;}
 
-.x-left-bottom-black {left: 0px;  height: 60px; bottom: 10px;}
-.x-right-bottom-black {bottom: 10px; right: 10px; height: 60px;}
-
-
-
-.x-left-white {top: 10px; left: 10px;  height: 60px; }
+.x-left-white {top: 10px; left: 10px;  height: 62px; }
 .x-left-dash-white {top: 30px; left: 55px; height: 150px; transform: rotate(-45deg) }
-.x-right-white {top: 10px; right: 0px; height: 60px;}
-.x-right2-white {top: 60px; right: 20px; height: 40px;}
+.x-right-white {top: 10px; right: 0px; height: 62px;}
+.x-right2-white {top: 60px; right: 20px; height: 50px;}
 .x-bottom-white {top:90px; left: 50px; width: 40px;}
-
-.x-left-bottom-white {bottom: 0px; left: 10px;  height: 60px; }
+.x-left-bottom-white {top: 135px; left: 10px;  height: 75px; }
 .x-right-dash-white {top: 30px; left: 55px; height: 150px; transform: rotate(45deg) }
-.x-right-bottom-white {bottom: 0px; right: 0px; height: 60px;}
+.x-right-bottom-white {top: 135px; right: 0px; height: 75px;}
 
 
 
 
 /* Letter Y */
-.y-left-black {top: 0px; left: 0px;  height: 70px; }
-.y-left2-black {left: 15px; top: 50px; height: 70px; transform: rotate(-45deg)}
-.y-right-black {top: 0px; right: 10px; height: 70px;}
-.y-right2-black {top: 60px; right: 30px; height: 60px; transform: rotate(45deg)}
-.y-bottom-black {top:80px; left: 20px; width: 80px;}
-.y-mid-black {left: 45px; bottom: 10px; height: 100px;}
 
-.y-left-white {top: 10px; left: 10px;  height: 70px; }
-.y-left2-white {top: 60px; left: 30px; height: 70px; transform: rotate(-45deg)}
-.y-right-white {top: 10px; right: 0px; height: 70px;}
-.y-right2-white {top: 60px; right: 20px; height: 70px; transform: rotate(45deg)}
-.y-bottom-white {top:90px; left: 30px; width: 80px;}
-.y-mid-white {bottom: 0px; left: 55px;  height: 100px; }
+.y-left2-black {top: 0px; left: 0px;  height: 120px; }
+.y-right-black {top: 0px; right: 10px; height: 210px;}
+.y-bottom-black {bottom: 0px; right: 10px; width: 90px;}
+.y-mid-black {top: 90px; right: 10px; width: 110px;}
+
+.y-left2-white {top: 10px; left: 10px; height: 120px; }
+.y-right-white {top: 10px; right: 0px; height: 200px;}
+.y-bottom-white {bottom: -10px; right: 0px; width: 90px;}
+.y-mid-white {top: 100px; right: 0px; width: 120px;}
 
 /* Letter Z */
 
 .z-right-black {top: 0px; right: 10px; height: 60px;}
-.z-right2-black {top: 50px; right: 30px; height: 40px;}
-.z-mid-black {top: 85px; left:-10px; width: 140px; transform: rotate(-45deg)}
+.z-mid-black {top: 83px; left:-17px; width: 150px; transform: rotate(-45deg)}
 .z-top-black {top:0px;}
-.z-bottom-black {top:160px;}
-.z-left-bottom-black {left: 0px;  height: 60px; bottom: 10px;}
-.z-left2-bottom-black {left: 20px; bottom: 60px; height: 40px;}
+.z-bottom-black {bottom:0px;}
+.z-left-bottom-black {left: 0px;  height: 70px; bottom: 0px;}
 
-.z-right-white {top: 10px; right: 0px; height: 65px;}
-.z-right2-white {top: 60px; right: 20px; height: 40px;}
-.z-mid-white {top:90px; left: 0px; width: 140px; transform: rotate(-45deg)}
-.z-top-white {top:170px;left: 10px;}
-.z-bottom-white {top:10px;left: 10px;}
-.z-left-bottom-white {bottom: 0px; left: 10px;  height: 65px; }
-.z-left2-bottom-white {bottom: 50px; left: 30px; height: 40px; }
+
+.z-right-white {top: 10px; right: 5px; height: 65px;}
+.z-mid-white {top:92px; left: -7px; width: 150px; transform: rotate(-45deg)}
+.z-top-white {bottom:-10px;left: 10px; }
+.z-bottom-white {top:10px;left: 10px; width: 110px;}
+.z-left-bottom-white {bottom: -10px; left: 10px;  height: 70px; }
 
 .space {
-  width: 200px;
+  width: 150px;
+  height: 130px;
 }
