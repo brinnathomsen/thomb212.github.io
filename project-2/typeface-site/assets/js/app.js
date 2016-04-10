@@ -3,34 +3,59 @@
 var newWord = $(".word");
 var newStage = $(".stage");
 var wordNumber = 0;
-var time = 0;
 var overTime;
 var stages = 0;
 var multiplier = 1;
 var newPosX = 1;
 var newPosY;
+var mouseX = 0;
+var stagePosition = 0;
 
-$(window).click(function(event) {
-  overTime = $(".stage").clone();
+var repeat = window.setInterval(repeatText, 100);
 
+function repeatText() {
+  // create extra stage, name it with clone number, append empty div to body
   var extraStage = "<div class='stage" + stages + "'></div>";
-  $("body").append(extraStage);
+  $(".history").append(extraStage);
+
+  // clone the original stage and place copies in the new named divs
+  overTime = $(".stageOriginal").html();
   $(".stage" + stages).append(overTime);
 
-  multiplier++;
-  newPosY = multiplier * 15;
 
-  if (event.clientX < newPosX) {
-    newPosX = newPosX - 15;
+  multiplier++;
+  newPosY = multiplier * 8;
+
+  if (mouseX < newPosX) {
+    newPosX = newPosX - 8;
+    $(".white").css("background-color", "#000");
+    $(".black").css("background-color", "#FFF");
+
   } else {
-    newPosX = newPosX + 15;
+    newPosX = newPosX + 8;
+    $(".white").css("background-color", "#FFF");
+    $(".black").css("background-color", "#000");
+
   }
 
-  $(".stage" + stages + " .stage").css("top", newPosY + "px");
-  $(".stage" + stages + " .stage").css("left", newPosX + "px");
+
+  stagePosition = stagePosition - 8;
+
+  $(".history").css("top", stagePosition + "px");
+
+
+
+  // to fix the loading issue, set it to clone the first stage.
+  $(".stage" + stages + " .word").css("top", newPosY + "px");
+  $(".stage" + stages + " .word").css("left", newPosX + "px");
 
   // console.log(event.timeStamp);
   stages++;
+}
+
+
+$(window).mousemove(function(event) {
+  mouseX = event.clientX;
 });
 
 
@@ -151,11 +176,44 @@ $(window).keypress(function(event) {
 
   if (event.which == 32) {
     wordNumber = wordNumber + 1;
-    newWord = $(".stage").append("<div class='word word" + wordNumber +
+
+    // newLetter = $(".alphabet .space").clone();
+    // $(newWord).append(newLetter);
+
+    newWord = $(".stageOriginal .word").append("<div class='words words" +
+      wordNumber +
       "'></div>");
-    newWord = $(".word" + wordNumber);
+    newWord = $(".words" + wordNumber);
     $(newWord).append(newLetter);
   }
 
   // console.log(event.which);
 });
+
+
+// $(window).click(function(event) {
+//   // create extra stage, name it with clone number, append empty div to body
+//   var extraStage = "<div class='stage" + stages + "'></div>";
+//   $("body").append(extraStage);
+//
+//   // clone the original stage and place copies in the new named divs
+//   overTime = $(".stage").clone();
+//   $(".stage" + stages).append(overTime);
+//
+//   multiplier++;
+//   newPosY = multiplier * 15;
+//
+//   if (event.clientX < newPosX) {
+//     newPosX = newPosX - 15;
+//   } else {
+//     newPosX = newPosX + 15;
+//   }
+//
+//   // to fix the loading issue, set it to clone the first stage.
+//
+//   $(".stage" + stages + " .stage").css("top", newPosY + "px");
+//   $(".stage" + stages + " .stage").css("left", newPosX + "px");
+//
+//   // console.log(event.timeStamp);
+//   stages++;
+// });
