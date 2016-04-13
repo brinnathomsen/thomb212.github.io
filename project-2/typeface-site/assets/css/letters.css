@@ -103,6 +103,8 @@ h3 {
 
 
 
+
+
 .stage {
   font-size: 0px;
   position: absolute;
@@ -111,14 +113,18 @@ h3 {
   z-index: 0;
 }
 
+.bigger {
+  transform: scale(5);
+}
+
 .stageOriginal {
   font-size: 0px;
   position: absolute;
   top:0;
   left:0;
-  display: none;
-
+  /*display: none;*/
 }
+
 
 .alphabet {
 display: inline-block;
@@ -129,16 +135,15 @@ display: none;
   margin-top: 200px;
   margin-left: -500px;
   display: inline-block;
-transform: scale(.5);
+  transform: scale(.5);
   font-size: 0px;
   position: absolute;
   top: -10000px;
-width: 2000px;
+  width: 1000px;
 
 }
 
 .words {
-
   display: inline-block;
   margin-right: 75px;
   margin-top: 20px;
@@ -146,13 +151,17 @@ width: 2000px;
 
 
 .letter {
-
   width: 130px;
   height: 200px;
   margin: 10px;
   position: relative;
   display: inline-block;
+}
 
+.text {
+    transform: scale(2);
+    position: absolute;
+    top: 250px;
 }
 
 .bar {
