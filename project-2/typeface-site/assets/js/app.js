@@ -13,20 +13,34 @@ var mouseX = 0;
 var stagePosition = -50;
 
 var textBoxSize = 150;
+var cursorColor = "black";
 
 var mseconds = 0;
 var seconds = 0;
 var minutes = 0;
 
 
+
 var repeat = window.setInterval(repeatText, 100);
 var repeat = window.setInterval(timer, 100);
+var cursorBlink = window.setInterval(cursorBlinking, 400);
 
 // make look back clickable
 $(".look-back").click(function() {
   $(".typing").css("display", "none");
+  $(".timer").css("bottom", "0px");
+
 });
 
+function cursorBlinking() {
+
+  $(".cursor").css("background-color", cursorColor);
+  if (cursorColor === "black") {
+    cursorColor = "#8c95ac";
+  } else if (cursorColor === "#8c95ac") {
+    cursorColor = "black";
+  }
+}
 
 function timer() {
   mseconds = mseconds + 1;

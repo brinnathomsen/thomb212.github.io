@@ -4,13 +4,14 @@ html{
 }
 
  body {
-  background-color: grey;
+  background-color: #8c95ac;
   font-family: OCR A std;
   margin: 0px;
   padding: 0px;
   font-size: 0px;
   width: 100%;
   height: 100%;
+  overflow:hidden
 }
 
 .question {
@@ -40,17 +41,20 @@ h1 {
 h3 {
   position: absolute;
   color: black;
-  font-size: 50px;
-  right: 30px;
+  font-size: 40px;
+  right: 100px;
   bottom: -30px;
 }
 
 
 .cursor {
+  position: absolute;
   margin: auto;
-  height: 10px;
-  width: 1px;
+  height: 400px;
+  width: 30px;
   background-color: black;
+  left: 1000px;
+  top: 180px;
 }
 
 .intro {
@@ -105,7 +109,7 @@ h3 {
 .history {
   z-index: 0;
   position: absolute;
-  top: 10px;
+  top: 100px;
   height: 400px;
   width: 800px;
 }
@@ -141,7 +145,7 @@ h3 {
 
 .words {
   display: inline-block;
-  margin-right: 75px;
+  margin-left: 75px;
   margin-top: 20px;
 }
 
