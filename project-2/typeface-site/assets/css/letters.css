@@ -1,21 +1,25 @@
 
 html{
-  width:
+  width: 100%;
 }
+
  body {
-  background-color: white;
-  font-family: avenir;
+  background-color: grey;
+  font-family: OCR A std;
   margin: 0px;
   padding: 0px;
   font-size: 0px;
   width: 100%;
   height: 100%;
-  position:absolute;
 }
 
-.hello {
-  position: relative;
-  background-color: white
+.question {
+  position:fixed;
+  top: 80px;
+  left: 50px;
+  font-size: 20px;
+  font-family: OCR A std;
+
 }
 
 h1 {
@@ -24,11 +28,13 @@ h1 {
   text-align: center;
 }
 
-h2 {
+.timer {
+  position:fixed;
   margin-top: 20px;
+  right: 100px;
   color: black;
-  font-size: 250px;
-  text-align: center;
+  font-size: 100px;
+  z-index: 700;
 }
 
 h3 {
@@ -39,12 +45,6 @@ h3 {
   bottom: -30px;
 }
 
-.answer-field {
-  margin: auto;
-  height: 30px;
-  width: 500px;
-  background-color: grey;
-}
 
 .cursor {
   margin: auto;
@@ -64,24 +64,30 @@ h3 {
   display: none;
 }
 
-
+/* TYPE FIELD *//* TYPE FIELD *//* TYPE FIELD *//* TYPE FIELD */
 .typing {
-  background-color: gray;
+  position: relative;
   width: 100%;
-  height: 400px;
-  padding-top: 300px;
-  text-align: center;
+  height: 700px;
   z-index: 2;
-  position: absolute;
-  /*display: none;*/
+  background-color: #8c95ac;
+  font-size: 0px;
+  margin: 0px;
 }
 
 .top-bar {
   position: absolute;
   top: 0px;
-  background-color: white;
   width: 100%;
-  height: 100px;
+  height: 150px;
+  background-color: white;
+}
+
+.text {
+  position: absolute;
+  transform: scale(2);
+  top: 250px;
+  width: 300px;
 }
 
 .bottom-bar {
@@ -93,28 +99,23 @@ h3 {
   width: 100%
 }
 
+
+/* LOOK BACK *//* LOOK BACK *//* LOOK BACK *//* LOOK BACK */
+
 .history {
   z-index: 0;
   position: absolute;
   top: 10px;
-  background-color: grey;
+  height: 400px;
+  width: 800px;
 }
 
-
-
-
-
-
 .stage {
-  font-size: 0px;
   position: absolute;
+  font-size: 0px;
   top:0;
   left:0;
   z-index: 0;
-}
-
-.bigger {
-  transform: scale(5);
 }
 
 .stageOriginal {
@@ -122,25 +123,20 @@ h3 {
   position: absolute;
   top:0;
   left:0;
-  /*display: none;*/
 }
 
 
-.alphabet {
-display: inline-block;
-display: none;
-}
+/* WORD FORMATION *//* WORD FORMATION *//* WORD FORMATION */
 
 .word {
+  position: absolute;
   margin-top: 200px;
-  margin-left: -500px;
+  margin-left: -1000px;
   display: inline-block;
   transform: scale(.5);
   font-size: 0px;
-  position: absolute;
-  top: -10000px;
-  width: 1000px;
-
+  top: -1000px;
+  width: 2000px;
 }
 
 .words {
@@ -150,6 +146,8 @@ display: none;
 }
 
 
+/* LETTERFORMS *//* LETTERFORMS *//* LETTERFORMS *//* LETTERFORMS */
+
 .letter {
   width: 130px;
   height: 200px;
@@ -158,33 +156,16 @@ display: none;
   display: inline-block;
 }
 
-.text {
-    transform: scale(2);
-    position: absolute;
-    top: 250px;
+.alphabet {
+display: inline-block;
+display: none;
 }
 
-.bar {
-  position: absolute;
-}
-
-.vert {
-  height: 200px;
-  width: 30px;
-  border-radius: 25px;
-}
-
-.horz {
-  height: 30px;
-  width: 120px;
-  border-radius: 25px;
-}
-
-
+.bar { position: absolute; }
+.vert { height: 200px; width: 30px; border-radius: 25px; }
+.horz { height: 30px; width: 120px; border-radius: 25px; }
 .black {background-color: #000; }
 .white {background-color: #FFF; }
-.black-serif { left: -10px;}
-.white-serif {width: 130px; left: 0px;}
 
 /* Letter A */
 .a-left-black {top: 0px; left: 0px;}
@@ -196,7 +177,6 @@ display: none;
 .a-right-white {top: 10px; right: 0px; height:200px;}
 .a-top-white {top:10px; left: 10px;}
 .a-mid-white {top:100px; left: 10px;}
-
 
 /* Letter B */
 .b-left-black {left: 0px;}
@@ -211,7 +191,6 @@ display: none;
 .b-mid-white {top:98px; width: 70px; right: 0px;}
 .b-bottom-white {top:180px; width: 120px; left: 10px;}
 
-
 /* Letter C */
 .c-left-black {top: 0px; left: 0px; height: 200px;}
 .c-top-black {top:0; left: 0px; width: 120px;}
@@ -220,7 +199,6 @@ display: none;
 .c-left-white {top: 10px; left: 10px; height: 200px; }
 .c-top-white {top:10px; left: 10px; width: 120px;}
 .c-bottom-white {top:180px; left: 10px; width: 120px;}
-
 
 /* Letter D */
 .d-left-black {left: 0px;}
@@ -233,8 +211,6 @@ display: none;
 .d-top-white {top:10px; width: 130px; left: 0px;}
 .d-bottom-white {top:180px; width: 130px; left: 0px;}
 
-
-
 /* Letter E */
 .e-left-black {left: 0px;}
 .e-top-black {top:0; left: 0px; width: 120px;}
@@ -245,7 +221,6 @@ display: none;
 .e-top-white {top:10px; left: 10px; width: 120px;}
 .e-mid-white {top:100px; width: 70px; left: 10px;}
 .e-bottom-white {top:180px; left: 10px; width: 120px; }
-
 
 /* Letter F */
 .f-left-black {left: 0px;}
@@ -307,8 +282,6 @@ display: none;
 .k-top-white {top: 135px; left: 0px; width: 150px; transform: rotate(45deg)}
 .k-bottom-white {top:55px; left: 0px; width: 150px; transform: rotate(-45deg)}
 
-
-
 /* Letter L */
 .l-mid-black {left: 0px;}
 .l-bottom-black {top:170px;}
@@ -323,14 +296,11 @@ display: none;
 .m-top-black {top:0px; left: -10px; width: 140px;}
 .m-bottom-black {top:170px;}
 
-
 .m-left-white {top: 10px; left: 0px;}
 .m-mid-white {top:10px; left: 55px; height: 80px;}
 .m-right-white {top: 10px; right: -10px;}
 .m-top-white {top:10px; left: 0px; width: 140px;}
 .m-bottom-white {top:180px;}
-
-
 
 /* Letter N */
 .n-left-black {left: 0px;}
@@ -468,11 +438,7 @@ display: none;
 .x-right-dash-white {top: 30px; left: 55px; height: 150px; transform: rotate(45deg) }
 .x-right-bottom-white {top: 135px; right: 0px; height: 75px;}
 
-
-
-
 /* Letter Y */
-
 .y-left2-black {top: 0px; left: 0px;  height: 120px; }
 .y-right-black {top: 0px; right: 10px; height: 210px;}
 .y-bottom-black {bottom: 0px; right: 10px; width: 90px;}
@@ -484,21 +450,14 @@ display: none;
 .y-mid-white {top: 100px; right: 0px; width: 120px;}
 
 /* Letter Z */
-
 .z-right-black {top: 0px; right: 10px; height: 60px;}
 .z-mid-black {top: 83px; left:-17px; width: 150px; transform: rotate(-45deg)}
 .z-top-black {top:0px;}
 .z-bottom-black {bottom:0px;}
 .z-left-bottom-black {left: 0px;  height: 70px; bottom: 0px;}
 
-
 .z-right-white {top: 10px; right: 5px; height: 65px;}
 .z-mid-white {top:92px; left: -7px; width: 150px; transform: rotate(-45deg)}
 .z-top-white {bottom:-10px;left: 10px; }
 .z-bottom-white {top:10px;left: 10px; width: 110px;}
 .z-left-bottom-white {bottom: -10px; left: 10px;  height: 70px; }
-
-.space {
-  width: 50px;
-  height: 130px;
-}
