@@ -78,7 +78,7 @@ function repeatText() {
 
 
 
-  stagePosition = stagePosition - 8.5;
+  // stagePosition = stagePosition - 8.5;
 
 
   if (mouseX < newPosX) {
@@ -90,8 +90,8 @@ function repeatText() {
     $(".history .white").css("background-color", "#FFF");
     $(".history .black").css("background-color", "#000");
   }
-
-  $(".history").css("top", stagePosition + "px");
+  //
+  // $(".history").css("top", stagePosition + "px");
   // to fix the loading issue, set it to clone the first stage.
   $(".stage" + stages + " .word").css("top", newPosY + "px");
   $(".stage" + stages + " .word").css("left", newPosX + "px");
