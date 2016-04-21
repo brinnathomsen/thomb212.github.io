@@ -1,6 +1,11 @@
 
 
 
-button {
+.button {
+padding: 10px;
 font-size: 20;
+border-style: outset;
+border-width: 2px;
+width: 100px;
+text-align: center;
 }
