@@ -1,0 +1,45 @@
+
+
+body {
+  font-family: fira sans;
+}
+
+.text {
+margin: auto;
+width: 750px;
+letter-spacing: 1px;
+}
+
+.greeting {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 120px;
+}
+
+.rant {
+  margin-top: 50px;
+  font-size:30px;
+}
+
+
+
+
+/* emotions */
+
+.angry {
+
+}
+
+.annoyed {
+
+}
+
+.happy {
+
+}
+
+.excited {
+
+}
