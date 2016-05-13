@@ -1,6 +1,6 @@
 
 .navbar {
-  font-family: montserrat;
+  font-family: futura;
   list-style-type: none;
   display: block;
   position: fixed;
@@ -18,7 +18,7 @@
 a {
     margin: 5px;
     padding: 10px 30px 10px 30px;
-    font-family: montserrat;
+    font-family: futura;
     color: #000;
     text-decoration: none;
     background-color: #0FF;
@@ -57,12 +57,12 @@ ul, li {
   padding: 0;
 }
 
-h2 {font-family: montserrat; font-size: 30px;}
+h2 {font-family: futura; font-size: 30px;}
 
 
 
 ul {
-  font-family: montserrat;
+  font-family: futura;
   list-style-type: none;
   display: list-item;
 }
@@ -124,7 +124,7 @@ position: relative;
   position:absolute
 }
 .song8am {
-  font-family:montserrat;
+  font-family:futura;
   font-style: italic;
   font-weight:lighter;
   letter-spacing: 5px;
@@ -214,7 +214,7 @@ position: relative;
 }
 
 .song11am {
-  font-family:montserrat;
+  font-family:futura;
   letter-spacing: 1px;
   font-style: italic;
   position:absolute;
@@ -296,7 +296,7 @@ position: relative;
 }
 .song2pm {
   position: absolute;
-  font-family:montserrat;
+  font-family:futura;
   font-style: italic; line-height: 30px;
 }
 .signs2pm {
@@ -348,7 +348,7 @@ position: relative;
 
 /*************** 5PM ***************/
 .list5pm {position: absolute;   font-weight:lighter;}
-.song5pm {position: absolute; font-family:montserrat; font-style: italic;   font-weight:lighter;}
+.song5pm {position: absolute; font-family:futura; font-style: italic;   font-weight:lighter;}
 .signs5pm {letter-spacing: 5px; position:absolute;   font-weight:lighter;}
 
 /* section1 5PM  */
@@ -439,7 +439,7 @@ position: relative;
 }
 .song8pm {
   position: absolute;
-  font-family:montserrat;
+  font-family:futura;
   font-style: italic;
   font-weight: heavier;
   letter-spacing: 0px;
@@ -540,7 +540,7 @@ position: relative;
 /* 11PM */
 .list11pm {letter-spacing: normal; font-weight: normal; position: absolute;}
 .signs11pm {letter-spacing: 1px; font-weight: heaviest; position:absolute; font-style: bold;}
-.song11pm {position: absolute; font-family:montserrat; font-style: italic; font-weight: heavier;}
+.song11pm {position: absolute; font-family:futura; font-style: italic; font-weight: heavier;}
 /* section1 11PM */
 .rect11pm1 {width: 150px; height: 300px; background-color: #B49600; left: 700px; top:600px}
 .rect11pm2 {width: 300px; height: 200px; background-color: #E42209; left: 30px; top:350px}
@@ -599,7 +599,7 @@ position: relative;
 
 .song2am {
   position: absolute;
-  font-family:montserrat;
+  font-family:futura;
   font-style: italic;
   font-weight: lighter;
 }
