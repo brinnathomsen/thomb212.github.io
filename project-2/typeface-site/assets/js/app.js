@@ -109,11 +109,6 @@ $(window).mousemove(function(event) {
   mouseX = event.clientX;
 });
 
-function move() {
-  $("html,body").animate({
-    scrollTop: 0
-  }, 0);
-}
 
 function scrolling() {
   // AUTO SCROLL TO BOTTOM
@@ -122,7 +117,7 @@ function scrolling() {
       scrollTop: $(document).height()
     }, 0);
   }
-
+  move();
 
   // BREAK AUTO SCROLL AND SET BACK WHEN SCROLLED TO BOTTOM
   $(window).scroll(function() {
