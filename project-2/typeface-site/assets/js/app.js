@@ -22,13 +22,14 @@ var minutes = 0;
 
 
 var repeat = window.setInterval(repeatText, 100);
+var scrollDown = window.setInterval(scrolling, 100);
 var repeat = window.setInterval(timer, 100);
 var cursorBlink = window.setInterval(cursorBlinking, 400);
 
 // make look back clickable
 $(".look-back").click(function() {
   $(".typing").css("display", "none");
-  $(".timer").css("top", "0px");
+  $(".timer").css("bottom", "0px");
   var scrollDown = window.setInterval(scrolling, 100);
 
 });
