@@ -1,5 +1,5 @@
 body {
-  font-family: fira sans;
+  font-family: fira sans, avenir;
 }
 
 .greeting {
@@ -7,7 +7,6 @@ body {
   padding: -5px;
   position: fixed;
   top: 0px;
-
   left: 0px;
 
   margin-left: 0;
