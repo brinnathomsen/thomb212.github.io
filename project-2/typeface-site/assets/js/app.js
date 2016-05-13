@@ -22,7 +22,6 @@ var minutes = 0;
 
 
 var repeat = window.setInterval(repeatText, 100);
-var scrollDown = window.setInterval(scrolling, 100);
 var repeat = window.setInterval(timer, 100);
 var cursorBlink = window.setInterval(cursorBlinking, 400);
 
