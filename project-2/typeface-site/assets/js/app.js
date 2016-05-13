@@ -28,9 +28,11 @@ var cursorBlink = window.setInterval(cursorBlinking, 400);
 // make look back clickable
 $(".look-back").click(function() {
   $(".typing").css("display", "none");
-  $(".timer").css("bottom", "0px");
+  $(".timer").css("top", "0px");
+  var scrollDown = window.setInterval(scrolling, 100);
 
 });
+
 
 function cursorBlinking() {
 
@@ -81,6 +83,7 @@ function repeatText() {
   // stagePosition = stagePosition - 8.5;
 
 
+
   if (mouseX < newPosX) {
     newPosX = newPosX - 8;
     $(".history .white").css("background-color", "#000");
@@ -90,6 +93,7 @@ function repeatText() {
     $(".history .white").css("background-color", "#FFF");
     $(".history .black").css("background-color", "#000");
   }
+  $(".barrier").css("margin-top", newPosX);
   //
   // $(".history").css("top", stagePosition + "px");
   // to fix the loading issue, set it to clone the first stage.
@@ -106,6 +110,31 @@ $(window).mousemove(function(event) {
 });
 
 
+function scrolling() {
+  // AUTO SCROLL TO BOTTOM
+  function move() {
+    $("html,body").animate({
+      scrollTop: $(document).height()
+    }, 0);
+  }
+  move();
+
+  // BREAK AUTO SCROLL AND SET BACK WHEN SCROLLED TO BOTTOM
+  $(window).scroll(function() {
+    clearInterval(lock_to_bottom);
+
+    var window_height = $(window).height(),
+      doc_height = $(document).height(),
+      scroll_pos = $(window).scrollTop();
+
+    if ((scroll_pos + window_height) >= (doc_height - 500)) {
+      lock_to_bottom = setInterval(function() {
+        move();
+      }, 100);
+    }
+  });
+
+}
 
 // USER CAN TYPE WITH KEYBOARD
 $(window).keypress(function(event) {

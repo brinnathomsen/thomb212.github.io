@@ -3,6 +3,13 @@ html{
   width: 100%;
 }
 
+.barrier {
+  width: 1000px;
+  height: 500px;
+  background-color: blue;
+  z-index: -2;
+}
+
  body {
   background-color: #8c95ac;
   font-family: OCR A std;
