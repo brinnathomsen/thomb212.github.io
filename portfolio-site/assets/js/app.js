@@ -79,3 +79,9 @@ $(".logo").hover(function() {
 }, function() {
   $(".logo").css("opacity", "1");
 });
+
+$(".portrait").hover(function() {
+  $(".portrait").css("opacity", ".75");
+}, function() {
+  $(".portrait").css("opacity", "1");
+});
