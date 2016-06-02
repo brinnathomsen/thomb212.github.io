@@ -49,3 +49,33 @@ $(".emotional").hover(function() {
 }, function() {
   $(".emotional").css("opacity", "1");
 });
+
+$(".insecure").hover(function() {
+  $(".insecure").css("opacity", ".75");
+}, function() {
+  $(".insecure").css("opacity", "1");
+});
+
+$(".details").hover(function() {
+  $(".details").css("opacity", ".75");
+}, function() {
+  $(".details").css("opacity", "1");
+});
+
+$(".poster").hover(function() {
+  $(".poster").css("opacity", ".75");
+}, function() {
+  $(".poster").css("opacity", "1");
+});
+
+$(".texture").hover(function() {
+  $(".texture").css("opacity", ".75");
+}, function() {
+  $(".texture").css("opacity", "1");
+});
+
+$(".logo").hover(function() {
+  $(".logo").css("opacity", ".75");
+}, function() {
+  $(".logo").css("opacity", "1");
+});

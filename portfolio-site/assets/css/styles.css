@@ -7,6 +7,13 @@
   margin-left: 0px;
 }
 
+.contact-info {
+  position: absolute;
+  left: 1000px;
+  top: 40px;
+  text-align: right;
+}
+
 h1 {
   margin-left: 50px;
   margin-top: 50px;
@@ -20,12 +27,25 @@ h3 {
 }
 
 h4 {
-
+  margin: 5px;
   letter-spacing: .5px;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: lighter;
 
+
 }
+
+h5 {
+  margin: 5px;
+  letter-spacing: .5px;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+ul {
+  list-style-type: none;
+}
+
 
 a {
   color: black;
@@ -56,6 +76,7 @@ a {
   padding-bottom: 30px;
   width: 10000px;
   z-index: 1;
+  display: inline-block;
 }
 
 
@@ -82,11 +103,19 @@ video{
   left:50px;
 }
 
+.resume {
+  position:fixed;
+  top: 150px;
+  left:50px;
+  width: 500px;
+
+}
+
 .images-detail {
   position: absolute;
   width: 500px;
   left: 600px;
-  top: 50px;
+  top: 70px;
   display:list-item;
   margin-bottom: 10px;
 }
